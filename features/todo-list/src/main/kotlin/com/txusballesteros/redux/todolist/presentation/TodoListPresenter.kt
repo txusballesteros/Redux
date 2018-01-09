@@ -33,7 +33,7 @@ class TodoListPresenter(
     fun onAddTodoTap() = view?.showAddToDoDialog()
 
     fun addTodo(text: String) {
-        if (!text.isEmpty()) store.dispatch(AddTodoAction(text))
+        if (!text.isEmpty()) bg { store.dispatch(AddTodoAction(text)) }
     }
 
     interface View: Presenter.View {
