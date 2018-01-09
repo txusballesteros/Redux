@@ -3,12 +3,25 @@
 Redux ToDo List
 ===============
 
-This repository shows how I implement Redux architecture on Android using Kotlin and Coroutines. Basically the code implements all the architecture stuffs, like as Stores, 
+This repository shows how I've implemented Redux architecture on Android using Kotlin and Coroutines. Basically the code implements all the architecture stuffs, like as Stores, 
 Reducers, Actions and States.
 
 ## Under the hood
 
 TBD
+
+### States
+
+The State represents the application state, whole the application state. In my case, contains the ToDo list also persists this in memory storage.
+  
+### Actions
+
+The Actions represent all the edit operations those change the application state, in my case, I've just one and it manage he addition of new ToDo items to the list.
+ 
+### Reducers
+
+The Reducers are the responsible of containing the edition's logic for the state. I mean, They have the responsibility of do all the write operations over the state. Also are pure 
+functions, that means that those classes all time return the same value gave the same input arguments.    
 
 ## License
 
