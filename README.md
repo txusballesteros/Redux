@@ -1,4 +1,4 @@
-![](assets/redux.png) + ![](assets/kotlin.png)
+![](assets/redux.png) #+ ![](assets/kotlin.png)
 
 Redux ToDo List
 ===============
@@ -8,7 +8,7 @@ Reducers, Actions and States.
 
 ## Under the hood
 
-TBD
+![](assets/dataflow.png)
 
 ### States
 
@@ -21,7 +21,12 @@ The Actions represent all the edit operations those change the application state
 ### Reducers
 
 The Reducers are the responsible of containing the edition's logic for the state. I mean, They have the responsibility of do all the write operations over the state. Also are pure 
-functions, that means that those classes all time return the same value gave the same input arguments.    
+functions, that means that those cl
+
+### Store
+
+The Store represent exactly the same as its name says, is the storage / persistence layer of the architecture. With particularity that thsi state is immutable and only the 
+reducers have privileges to modify its.
 
 ## License
 
