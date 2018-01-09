@@ -4,7 +4,7 @@ Redux ToDo List
 ===============
 
 This repository shows how I've implemented Redux architecture on Android using Kotlin and Coroutines. Basically the code implements all the architecture stuffs, like as Stores, 
-Reducers, Actions and States.
+Reducers, Actions and States. If you wanna learn more about this architecture you can take a look to the official web-site [redux.js](https://redux.js.org/)
 
 ## Under the hood
 
