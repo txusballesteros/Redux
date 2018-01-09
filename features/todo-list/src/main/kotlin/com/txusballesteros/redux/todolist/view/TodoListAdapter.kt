@@ -12,6 +12,10 @@ import kotlinx.android.synthetic.main.item_todo_list.view.*
 class TodoListAdapter: RecyclerView.Adapter<TodoListAdapter.ViewHolder>() {
     private val cache: MutableList<TodoState> = mutableListOf()
 
+    fun clear() {
+        cache.clear()
+    }
+
     fun addAll(state: TodoListState) = cache.addAll(state.list)
 
     override fun getItemCount() = cache.size

@@ -1,0 +1,5 @@
+<resources>
+    <string name="add_todo_title">Add ToDo</string>
+    <string name="add_todo_accept_button">Add</string>
+    <string name="add_todo_cancel_button">Cancel</string>
+</resources>

@@ -1,5 +1,6 @@
 package com.txusballesteros.redux.todolist.presentation
 
+import com.txusballesteros.redux.core.action.AddTodoAction
 import com.txusballesteros.redux.core.state.TodoListState
 import com.txusballesteros.redux.core.store.TodoListStore
 import com.txusballesteros.redux.coreview.presentation.Presenter
@@ -29,7 +30,14 @@ class TodoListPresenter(
         subscription?.close()
     }
 
+    fun onAddTodoTap() = view?.showAddToDoDialog()
+
+    fun addTodo(text: String) {
+        if (!text.isEmpty()) store.dispatch(AddTodoAction(text))
+    }
+
     interface View: Presenter.View {
         fun render(state: TodoListState)
+        fun showAddToDoDialog()
     }
 }

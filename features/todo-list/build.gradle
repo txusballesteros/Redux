@@ -5,6 +5,7 @@ dependencies {
     implementation project(':modules:core-view')
     implementation contraintLayout
     implementation recyclerView
+    implementation design
     implementation (ankoRecyclerView) {
         exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib'
     }
