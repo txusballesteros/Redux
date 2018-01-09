@@ -1,4 +1,4 @@
-![](assets/redux.png) #+ ![](assets/kotlin.png)
+![](assets/redux.png) ![](assets/kotlin.png)
 
 Redux ToDo List
 ===============
