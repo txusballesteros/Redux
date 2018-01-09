@@ -1,0 +1,9 @@
+apply from: "${rootDir}/buildsystem/android-module.gradle"
+
+dependencies {
+    api project(':modules:redux-core')
+    api kotlinStdLib
+    api (kodein) {
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib'
+    }
+}

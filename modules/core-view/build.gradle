@@ -1,0 +1,13 @@
+apply from: "${rootDir}/buildsystem/android-module.gradle"
+
+dependencies {
+    implementation project(':modules:threading')
+    implementation kotlinStdLib
+    api (funktionaleOption)  {
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib'
+    }
+    api appCompat
+    api (ankoAppCompat)  {
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib'
+    }
+}

@@ -1,1 +1,7 @@
 include ':app'
+include 'modules:threading'
+include 'modules:core-view'
+include 'modules:core'
+include 'modules:threading'
+include 'modules:redux-core'
+include 'features:todo-list'
